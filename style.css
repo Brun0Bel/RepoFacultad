@@ -1,0 +1,142 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(3, 25, 32);
+    font-family: "Helvetica", Helvetica, serif;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    margin: 0;
+    padding: 1;
+    position: sticky;
+    z-index: 10;
+    background-color: rgb(61, 60, 60);
+    ;
+}
+
+li a:link,
+a:visited,
+a:active {
+    color: rgb(3, 25, 32);
+    font-family: 'Billabong', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.home {
+    height: max-content;
+}
+
+.container {
+    width: 100%;
+    max-width: max-content;
+    height: 100%;
+    max-height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card {
+    width: 250px;
+    height: 375px;
+    border-radius: 8px;
+    border-style: ridge;
+    border-color: rgb(3, 3, 90);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.25s;
+    background-color: rgb(61, 60, 60);
+    color: rgb(3, 3, 90);
+    font-weight: bold;
+}
+
+.container .card img {
+    width: 250px;
+    height: 250px;
+}
+
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+#perfil {
+    width: 35;
+    height: 35px;
+    border-radius: 50%;
+    float: left;
+    margin: 5 5 5 5;
+    border-style: solid;
+    border-color: rgb(3, 3, 90);
+}
+
+#dots {
+    font-size: 35px;
+    float: right;
+    margin: 5 5 5 5;
+}
+
+#descripcion {
+    margin: 0 2 2 2;
+}
+
+#fecha {
+    margin: 2 2 2 2;
+    padding: 2 2 2 2;
+    font-size: 10px;
+}
+
+#like {
+    font-size: 15px;
+    float: left;
+    margin: 2 1 0 10;
+}
+
+#fav {
+    font-size: 15px;
+    float: right;
+    margin: 2 10 0 1;
+}
+
+.footer {
+    position: fixed;
+}
+
+#foot {
+    text-align: center;
+}
+
+div div p {
+    position: relative;
+    float: left;
+}
+
+.cam {
+    position: absolute;
+    bottom: 25%;
+    right: 1%;
+}
